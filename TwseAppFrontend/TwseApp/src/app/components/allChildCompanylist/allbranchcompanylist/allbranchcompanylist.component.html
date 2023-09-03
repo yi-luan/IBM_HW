@@ -1,0 +1,66 @@
+<div class="securitiesDealer_parentCompany">
+    <div style="display:flex;align-items:center;gap:10px;">
+
+        <mat-form-field>
+            <mat-label>Enter the code</mat-label>
+            <input matInput placeholder="證卷商總公司代號" [formControl]="search_code" required>
+            <mat-error *ngIf="search_code.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Enter a date range</mat-label>
+            <mat-date-range-input [rangePicker]="picker">
+              <input matStartDate [formControl]="start_date" placeholder="Start date">
+              <input matEndDate [formControl]="end_date" placeholder="End date">
+            </mat-date-range-input>
+            <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-date-range-picker #picker></mat-date-range-picker>
+        </mat-form-field>
+        <div style="height:55px;"><button mat-raised-button color="primary" (click)="searchBranchCompaniesData();">Search</button></div>
+    </div>
+    <label class="securitiesDealer_parentCompany_text">證卷商子公司列表</label>
+    <table class="table-list table-list-color03 rwd-table01" style="padding:20px 0px;">
+    <tbody>
+        <tr>
+            <th class="th_no">ID</th>
+            <th class="th_no">出表日期</th>
+            <th class="th_no">證券商代號</th>
+            <th class="th_no">證券商名稱</th>
+            <th class="th_no">開業日</th>
+            <th class="th_no">地址</th>
+            <th class="th_no">電話</th>
+        </tr>
+        <tr
+        *ngFor="let item of branchCompanyList; let i = index"
+        >
+            <td class="text_c">
+                {{ item.id }}
+            </td>
+            <td class="text_c">
+                {{ item.dateOfPublication }}
+            </td>
+            <td class="text_c">
+                {{ item.securitiesFirmCode }}
+            </td>
+            <td class="text_c">
+                {{ item.securitiesFirmName }}
+            </td>
+            <td class="text_c">
+                {{ item.openingDate }}
+            </td>
+            <td class="text_c">
+                {{ item.address }}
+            </td>
+            <td class="text_c">
+                {{ item.telephone }}
+            </td>
+        </tr>
+    </tbody>
+    </table>
+    <mat-paginator
+    #contentPaginator
+    [length]="totalCount"
+    [pageSize]="rowsPerPage"
+    ></mat-paginator>
+  </div>

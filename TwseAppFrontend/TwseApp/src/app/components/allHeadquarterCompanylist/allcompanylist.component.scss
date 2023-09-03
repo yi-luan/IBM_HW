@@ -1,0 +1,18 @@
+.securitiesDealer_parentCompany{
+  display: block;
+  width: 85%;
+  height: 100%;
+  position: relative;
+  left: 50%;
+  transform:translateX(-50%);
+
+  .securitiesDealer_parentCompany_text{
+    font-size:16px;
+    font-weight: bold;
+  }
+}
+
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: white;
+}

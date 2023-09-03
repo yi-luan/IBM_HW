@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TwseApp.API.props" />
+</Project>

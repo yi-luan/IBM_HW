@@ -1,0 +1,189 @@
+.table-list {
+    border-collapse: collapse;
+    margin: 10px 0;
+    max-width: 100%;
+    width: 100%; }
+    .table-list thead > tr > th, .table-list tbody > tr > th, .table-list tfoot > tr > th, .table-list thead > tr > td, .table-list tbody > tr > td, .table-list tfoot > tr > td {
+      margin: 0;
+      border-top: 0px solid #ddd;
+      line-height: 1.42857;
+      padding: 10px 8px;
+      vertical-align: text-bottom;
+      font-size: 1rem; 
+      word-break: break-all;}
+      .table-list thead > tr > th a, .table-list tbody > tr > th a, .table-list tfoot > tr > th a, .table-list thead > tr > td a, .table-list tbody > tr > td a, .table-list tfoot > tr > td a {
+        text-decoration: none; }
+        .table-list thead > tr > th a .table-list-cont, .table-list tbody > tr > th a .table-list-cont, .table-list tfoot > tr > th a .table-list-cont, .table-list thead > tr > td a .table-list-cont, .table-list tbody > tr > td a .table-list-cont, .table-list tfoot > tr > td a .table-list-cont {
+          display: none;
+          margin: 5px;
+          padding: 10px;
+          width: 300px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          box-shadow: 0 0 5px #dedede;
+          background-color: #fff;
+          position: absolute;
+          opacity: 0.9; }
+          .table-list thead > tr > th a .table-list-cont h3, .table-list tbody > tr > th a .table-list-cont h3, .table-list tfoot > tr > th a .table-list-cont h3, .table-list thead > tr > td a .table-list-cont h3, .table-list tbody > tr > td a .table-list-cont h3, .table-list tfoot > tr > td a .table-list-cont h3 {
+            margin: 5px 0; }
+        .table-list thead > tr > th a:hover .table-list-cont, .table-list tbody > tr > th a:hover .table-list-cont, .table-list tfoot > tr > th a:hover .table-list-cont, .table-list thead > tr > td a:hover .table-list-cont, .table-list tbody > tr > td a:hover .table-list-cont, .table-list tfoot > tr > td a:hover .table-list-cont {
+          display: block; }
+    .table-list thead > tr > th {
+      border-bottom: 0px solid #ddd;
+      vertical-align: bottom; }
+    .table-list caption + thead > tr:first-child > th, .table-list colgroup + thead > tr:first-child > th, .table-list thead:first-child > tr:first-child > th, .table-list caption + thead > tr:first-child > td, .table-list colgroup + thead > tr:first-child > td, .table-list thead:first-child > tr:first-child > td {
+      border-top: 0 none; }
+    .table-list tbody + tbody {
+      border-top: 0px solid #ddd; }
+    .table-list .table .table {
+      background-color: #fff; }
+  
+  table col[class*="col-"] {
+    display: table-column;
+    float: none;
+    position: static; }
+  table td[class*="col-"], table th[class*="col-"] {
+    display: table-cell;
+    float: none;
+    position: static; }
+  table a.btn-primary {
+    color: #fff !important; }
+  table a.title-link {
+    width: 400px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  
+  .table-list-color001 tr {
+    background-color: #fff;
+    border-bottom: 1px solid #f7f8f8; }
+  .table-list-color001 tr:nth-child(odd) {
+    background-color: #fff; }
+  .table-list-color001 th {
+    background: #f3f4f5;
+    color: #525c68;
+    border-bottom: 0;
+    font-weight: bold; }
+  .table-list-color001 td a {
+    color: #3f911e; }
+  
+  .table-list-color002 tr {
+    background-color: #fff; }
+  .table-list-color002 tr:nth-child(odd) {
+    background-color: #f4f9eb; }
+  .table-list-color002 th {
+    background: #fff;
+    color: #60942d;
+    border-bottom: 1px solid #b7b9ba; }
+  .table-list-color002 td a {
+    color: #60942d; }
+  
+  .table-list-color003 tr {
+    background-color: #fff; }
+  .table-list-color003 tr:nth-child(odd) {
+    background-color: #f9ebeb; }
+  .table-list-color003 th {
+    background: #fff;
+    color: #cf5757;
+    border-bottom: 1px solid #b7b9ba; }
+  .table-list-color003 td a {
+    color: #cf5757; }
+  
+  .table-list-color01 tr {
+    background-color: #fff; }
+  .table-list-color01 tr:nth-child(odd) {
+    background-color: #ebf8f9; }
+  .table-list-color01 th {
+    background: #2988b9;
+    color: #fff;
+    border-bottom: 1px solid #b7b9ba; }
+  .table-list-color01 td a {
+    color: #4b4a4a; }
+  
+  .table-list-color02 tr {
+    background-color: #fff; }
+  .table-list-color02 tr:nth-child(odd) {
+    background-color: #f3f9eb; }
+  .table-list-color02 th {
+    background: #5a991a;
+    color: #fff;
+    border-bottom: 1px solid #b7b9ba; }
+  .table-list-color02 td a {
+    color: #4b4a4a; }
+  
+  .table-list-color03 tr {
+    background-color: #fff; }
+  .table-list-color03 tr:nth-child(odd) {
+    background-color: #f9f9f9; }
+  .table-list-color03 th {
+    background: #c2185b;
+    color: #fff;
+    border-bottom: 1px solid #b7b9ba; }
+  .table-list-color03 td a {
+    color: #4b4a4a; }
+  
+  .rwd_th, .rwd_th02 {
+    display: none; }
+  
+  .table-th-middle {
+    vertical-align: middle !important; }
+  
+  @media (max-width: 640px) {
+    .rwd-table01 {
+      width: 100%; }
+      .rwd-table01 tr, .rwd-table01 th, .rwd-table01 td {
+        display: block;
+        width: auto !important;
+        text-align: center; }
+        .rwd-table01 tr.th_no, .rwd-table01 th.th_no, .rwd-table01 td.th_no {
+          display: none; }
+      .rwd-table01 tr {
+        margin: 0 0 5px;
+        border: 1px solid #ddd; }
+        .rwd-table01 tr tr {
+          margin: 0;
+          border: 0; }
+      .rwd-table01 td {
+        border: 0px !important; }
+  
+    .rwd_table02 {
+      width: 100%; }
+      .rwd_table02 tr, .rwd_table02 th, .rwd_table02 td {
+        display: block;
+        width: auto;
+        text-align: center; }
+      .rwd_table02 tr {
+        margin: 0 0 5px;
+        padding: 10px 10px 0;
+        border: 1px solid #ddd; }
+        .rwd_table02 tr tr {
+          margin: 0;
+          border: 0; }
+      .rwd_table02 td {
+        border: 0px !important; }
+      .rwd_table02 .th_no {
+        display: none; }
+  
+    .rwd_th {
+      margin: 0 0 10px;
+      padding: 10px 8px;
+      display: block;
+      width: calc(100% - 16px) !important;
+      background-color: #f3f4f5;
+      text-align: center !important;
+      line-height: 1.6;
+      color: #525c68;
+      font-weight: bold; }
+  
+    .rwd_th02 {
+      margin: 0 0 10px;
+      padding: 5px 0;
+      display: block;
+      width: 100% !important;
+      background: rgba(52, 182, 215, 0.5) none repeat scroll 0 0 !important;
+      text-align: center;
+      line-height: 1.6;
+      color: #0f77ab; } }
+  

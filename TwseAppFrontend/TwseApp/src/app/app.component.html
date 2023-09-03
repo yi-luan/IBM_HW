@@ -1,0 +1,14 @@
+<p>
+  <mat-toolbar color="primary">
+    <span>TwseApp</span>
+    <div class="example-button-row">
+      <button mat-raised-button routerLink="/">總公司名單查詢</button>
+      <button mat-raised-button routerLink="/allBranchCompanyList">分公司名單查詢</button>
+      <button mat-mini-fab color="accent" aria-setsize="10" (click)="openDialog()">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+</p>
+<router-outlet></router-outlet>
+<app-loadingspinner [show]="isLoading"></app-loadingspinner>
