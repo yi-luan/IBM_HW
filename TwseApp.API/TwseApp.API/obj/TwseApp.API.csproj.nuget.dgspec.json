@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\11107303\\source\\repos\\TwseApp.API\\TwseApp.API\\TwseApp.API.csproj": {}
+    "C:\\Users\\11107303\\source\\repos\\IBM_homework\\TwseApp.API\\TwseApp.API\\TwseApp.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\11107303\\source\\repos\\TwseApp.API\\TwseApp.API\\TwseApp.API.csproj": {
+    "C:\\Users\\11107303\\source\\repos\\IBM_homework\\TwseApp.API\\TwseApp.API\\TwseApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\11107303\\source\\repos\\TwseApp.API\\TwseApp.API\\TwseApp.API.csproj",
+        "projectUniqueName": "C:\\Users\\11107303\\source\\repos\\IBM_homework\\TwseApp.API\\TwseApp.API\\TwseApp.API.csproj",
         "projectName": "TwseApp.API",
-        "projectPath": "C:\\Users\\11107303\\source\\repos\\TwseApp.API\\TwseApp.API\\TwseApp.API.csproj",
+        "projectPath": "C:\\Users\\11107303\\source\\repos\\IBM_homework\\TwseApp.API\\TwseApp.API\\TwseApp.API.csproj",
         "packagesPath": "C:\\Users\\11107303\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\11107303\\source\\repos\\TwseApp.API\\TwseApp.API\\obj\\",
+        "outputPath": "C:\\Users\\11107303\\source\\repos\\IBM_homework\\TwseApp.API\\TwseApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\11107303\\AppData\\Roaming\\NuGet\\NuGet.Config",

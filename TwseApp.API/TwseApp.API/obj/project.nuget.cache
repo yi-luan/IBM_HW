@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D8wUkbEePyt+sEm5MdCKD2031yFrhTTk6XGz5ESl13lYNBQ3YfNMKATHjfOLpqVs35Qa3HmPiC0rtQIQI9tzeg==",
+  "dgSpecHash": "FQRk8LU6xPko3GVb/1chztiLl5Ws+mJvu3TOFlo1NMYhE5xM6rrBEsZhrUaclKJKhfXF3CAAGJwUOq76wKJg7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\11107303\\source\\repos\\TwseApp.API\\TwseApp.API\\TwseApp.API.csproj",
+  "projectFilePath": "C:\\Users\\11107303\\source\\repos\\IBM_homework\\TwseApp.API\\TwseApp.API\\TwseApp.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\11107303\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\11107303\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

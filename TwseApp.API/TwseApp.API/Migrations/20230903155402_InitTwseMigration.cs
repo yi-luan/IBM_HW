@@ -2,10 +2,10 @@
 
 #nullable disable
 
-namespace TwseApp.API.Migrations.CompanyDb
+namespace TwseApp.API.Migrations
 {
     /// <inheritdoc />
-    public partial class AddMainMigration : Migration
+    public partial class InitTwseMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

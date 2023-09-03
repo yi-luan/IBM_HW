@@ -171,8 +171,5 @@ namespace TwseApp.API.Controllers
         } 
 
         #endregion
-
-
-
     }
 }
