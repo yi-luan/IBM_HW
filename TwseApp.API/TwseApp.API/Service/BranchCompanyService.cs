@@ -4,6 +4,7 @@ using System.Text.Json;
 using TwseApp.API.Data;
 using TwseApp.API.Dto;
 using TwseApp.API.Entities;
+using TwseApp.API.Models;
 using TwseApp.API.Repository;
 
 namespace TwseApp.API.Service

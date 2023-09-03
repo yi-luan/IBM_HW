@@ -8,8 +8,6 @@ namespace TwseApp.API.Data
     {
         public TwseDbContext(DbContextOptions options) : base(options) { }
 
-        public DbSet<Todo> Todos { get; set; }
-
         public DbSet<Headquarters> Headquarters { get; set; }
         public DbSet<Branch> Branches { get; set; }
 

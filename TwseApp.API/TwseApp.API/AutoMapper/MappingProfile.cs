@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using TwseApp.API.Dto;
 using TwseApp.API.Entities;
+using TwseApp.API.Models;
 
 namespace TwseApp.API.AutoMapper
 {

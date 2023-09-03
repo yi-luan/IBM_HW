@@ -16,6 +16,7 @@ import { MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MatPaginatorIntl } from '@angular/material/paginator';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { FormsModule } from '@angular/forms'; 
 
@@ -40,6 +41,7 @@ import { AllbranchcompanylistComponent } from './components/allChildCompanylist/
     MatDatepickerModule,
     MatNativeDateModule,
     ReactiveFormsModule,
+    MatSnackBarModule,
     FormsModule,
     MatFormFieldModule,
     BrowserModule,

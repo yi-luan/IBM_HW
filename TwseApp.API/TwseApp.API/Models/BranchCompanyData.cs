@@ -1,4 +1,4 @@
-﻿namespace TwseApp.API.Dto
+﻿namespace TwseApp.API.Models
 {
     public class BranchCompanyData
     {

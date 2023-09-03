@@ -1,13 +1,13 @@
 .securitiesDealer_parentCompany{
-    display: block;
-    width: 85%;
-    height: 100%;
-    position: relative;
-    left: 50%;
-    transform:translateX(-50%);
+  display: block;
+  width: 85%;
+  height: 80%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,40px);
   
-    .securitiesDealer_parentCompany_text{
-      font-size:16px;
-      font-weight: bold;
-    }
+  .securitiesDealer_parentCompany_text{
+    font-size:16px;
+    font-weight: bold;
   }
+}
