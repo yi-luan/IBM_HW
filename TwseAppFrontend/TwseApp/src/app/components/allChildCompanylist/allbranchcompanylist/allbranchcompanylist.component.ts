@@ -5,6 +5,9 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 import { QueryBrokerListService } from 'src/app/services/search-company-list/query-broker-list.service';
 import { queryBrokerListRequest } from 'src/app/models/queryBrokerListRequest';
 import { BranchCompanyList } from 'src/app/models/BranchCompanyList';
+import { GenerateCompanyListService } from 'src/app/services/generate-company-list/generate-company-list.service';
+import { AllCompanyData, CheckIfDatabaseHaveBeenInitResponse } from 'src/app/models/allCompanyData';
+import { of, switchMap } from 'rxjs';
 
 interface BranchCompany {
   id: number;
@@ -29,18 +32,27 @@ export class AllbranchcompanylistComponent {
     isloading = false;
     totalCount = 0;
     rowsPerPage = 10;
-    search_code = new FormControl('', [Validators.required]);
+    search_code = new FormControl('');
     start_date = new FormControl('');
     end_date = new FormControl('');
 
     @ViewChild('contentPaginator', { static: true }) contentPaginator!: MatPaginator;
 
-    constructor(private queryBrokerListService:QueryBrokerListService){}
+    constructor(private queryBrokerListService:QueryBrokerListService,private allCompanyService:GenerateCompanyListService){}
 
     ngOnInit():void{
       UtilsService.showLoading();
-      this.searchBranchCompaniesData();
-      UtilsService.closeLoading();
+      this.allCompanyService.CheckIfDatabaseHaveBeenInit().pipe(
+          switchMap((response: CheckIfDatabaseHaveBeenInitResponse) => {
+              if(!response.status) return this.allCompanyService.getAllCompanyData();
+              else return of(null)
+          })
+      )
+      .subscribe((response: AllCompanyData | null) => {
+          if(response?.status) alert("error");
+          this.searchBranchCompaniesData();
+          UtilsService.closeLoading();
+      });
     }
 
     ngAfterViewInit() {

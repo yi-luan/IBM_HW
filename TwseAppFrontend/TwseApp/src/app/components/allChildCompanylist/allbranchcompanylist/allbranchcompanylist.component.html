@@ -3,8 +3,7 @@
 
         <mat-form-field>
             <mat-label>Enter the code</mat-label>
-            <input matInput placeholder="證卷商總公司代號" [formControl]="search_code" required>
-            <mat-error *ngIf="search_code.invalid">{{getErrorMessage()}}</mat-error>
+            <input matInput placeholder="證卷商總公司代號" [formControl]="search_code">
         </mat-form-field>
 
         <mat-form-field>
